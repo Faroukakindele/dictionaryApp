@@ -21,6 +21,8 @@ html {
   --color-red: #ff5252;
   --color-input: #f4f4f4;
   --color-font: #757575;
+
+  margin: 1.5rem;
 }
 
 * {
