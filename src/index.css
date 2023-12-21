@@ -222,6 +222,10 @@ hr {
   width: 1em;
   margin-left: -1em;
 }
+.meaning ul li span {
+  display: block;
+  color: var(--color-font);
+}
 .synomyms {
   display: flex;
   padding: 1rem 0;
@@ -241,6 +245,29 @@ hr {
 
   text-transform: capitalize;
 }
+
+.source {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+.source p {
+  font-size: 1.3rem;
+  color: var(--color-font);
+  text-decoration: underline;
+  text-decoration-color: var(--color-font);
+}
+.source a:link,
+.source a:visited {
+  color: var(--color-primary-lighter);
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* Error Section  */
 .errorMessage {
   text-align: center;
