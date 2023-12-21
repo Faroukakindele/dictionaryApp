@@ -15,13 +15,14 @@ export function SearchQuery({ fontStyle, setQuery }) {
     e.preventDefault();
     if (!search) setErrorBorder(true);
     setQuery(search);
+    setOnClick(false);
   }
   return (
     <form className={`form`} onSubmit={(e) => handleSubmit(e)}>
       <div>
         <input
           className={errorborder ? "errorBorder" : onClick ? "onactive" : ""}
-          onClick={() => setOnClick(!onClick)}
+          onFocus={() => setOnClick(!onClick)}
           type="text"
           value={search}
           placeholder="Search for any word ..."

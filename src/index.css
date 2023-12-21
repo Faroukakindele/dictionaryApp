@@ -131,6 +131,10 @@ hr {
   justify-content: center;
   margin-left: -1rem;
 }
+.form div button:active {
+  outline: none;
+  border: none;
+}
 .form input {
   flex: 1;
   background-color: var(--color-input);
