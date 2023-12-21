@@ -112,7 +112,7 @@ hr {
 }
 /* Form */
 .form {
-  margin: 1.5rem 1.5rem;
+  margin: 3rem;
 }
 .form div {
   width: 100%;
@@ -159,7 +159,7 @@ hr {
   margin-left: -2rem;
 }
 .dictionary {
-  margin: 1.5rem;
+  margin: 3rem;
 }
 .message__heading {
   display: flex;
@@ -329,6 +329,12 @@ hr {
   .navIcons {
     flex: 0 40%;
   }
+  .form {
+    margin: 1.5rem;
+  }
+  .dictionary {
+    margin: 1.5rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -336,7 +342,7 @@ hr {
     font-size: 120%;
   }
   .navIcons {
-    /* flex: 0 30%; */
+    flex: 0 30%;
   }
 }
 .playAudio {
