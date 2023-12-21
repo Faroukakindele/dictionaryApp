@@ -232,10 +232,13 @@ hr {
 .synonym {
   color: var(--color-purple);
   flex: 1;
+  display: flex;
   text-align: left;
+  flex-wrap: wrap;
 }
 .synonym span {
   padding: 0 4px;
+
   text-transform: capitalize;
 }
 /* Error Section  */
