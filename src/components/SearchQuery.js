@@ -4,7 +4,7 @@ import SearchIcon from "../img/magnifying-glass";
 export function SearchQuery({ fontStyle, setQuery }) {
   const [onClick, setOnClick] = useState(false);
   const [errorborder, setErrorBorder] = useState(false);
-  const [search, setSearch] = useState("Keyboard");
+  const [search, setSearch] = useState("");
 
   function handleClick(e) {
     setErrorBorder(false);
@@ -22,7 +22,9 @@ export function SearchQuery({ fontStyle, setQuery }) {
       <div>
         <input
           className={errorborder ? "errorBorder" : onClick ? "onactive" : ""}
-          onFocus={() => setOnClick(!onClick)}
+          onFocus={() => setOnClick(true)}
+          onBlur={() => setOnClick(false)}
+          autoFocus
           type="text"
           value={search}
           placeholder="Search for any word ..."

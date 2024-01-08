@@ -6,7 +6,6 @@ export function DictionaryBody({ data }) {
   const [play, setPlay] = useState(false);
   const [items] = data;
 
-  console.log(items);
   return (
     <div className="dictionary">
       <div className="message__heading">

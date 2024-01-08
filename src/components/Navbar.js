@@ -3,15 +3,13 @@ import Logo from "../img/dictionaryLogo";
 import Moon from "../img/moonSVG";
 import { arr } from "../App";
 
-export function Navbar({ setFontFamily }) {
+export function Navbar({ fontFamily, setFontFamily }) {
   const [showOptions, setShowOptions] = useState(false);
 
-  const [list, setList] = useState(0);
   function handleClick(e) {
     if (!e.target.id) return;
-    setList(e.target.id);
     setShowOptions(!showOptions);
-    setFontFamily(() => e.target.id);
+    setFontFamily(() => Number(e.target.id));
   }
   function mouseEnter() {
     setShowOptions(!showOptions);
@@ -26,7 +24,7 @@ export function Navbar({ setFontFamily }) {
           onMouseLeave={mouseEnter}
           className="select"
         >
-          <label>{arr[list]}</label>
+          <label>{arr[fontFamily]}</label>
           <i className="arrow"></i>
           {showOptions && (
             <ul className="options" onClick={handleClick}>
